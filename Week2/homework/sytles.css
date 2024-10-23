@@ -1,0 +1,50 @@
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .profile-picture{
+    border-radius: 50%;
+    width: 150px;
+  }
+
+  .picture-div{
+    display: inline-block;
+  }
+
+  .personal-info-div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .name{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .header{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .section-div{
+    background-color: rgb(242, 240, 240);
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 590px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .course-work{
+    width: 550px;
+  }
