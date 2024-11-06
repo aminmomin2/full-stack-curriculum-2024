@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { ThemeContext } from './context/ThemeContext';
 import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import { WbSunny, NightsStay } from '@mui/icons-material';
+import PokemonList from './components/PokemonList.js'
 
 function App() {
 
@@ -11,7 +12,19 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      Hello World!
+      <AppBar position= 'sticky'>
+        <Toolbar>
+          <Typography variant='h6' sx={{flexGrow : 1}}>
+            Pokedex App
+          </Typography>
+          <IconButton onClick={toggleTheme}>
+            {theme.palette.mode === 'dark' ? <WbSunny/> : <NightsStay/>}
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+      <Routes>
+        <Route path='/' element = {<PokemonList/>}/>
+      </Routes>
     </ThemeProvider>
   );
 }
